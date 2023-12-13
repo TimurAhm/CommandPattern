@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿
+
+internal class Program
 {
     private static void Main(string[] args)
     {
@@ -49,9 +51,10 @@
         multiControler.PressUndoButton();
         multiControler.PressUndoButton();
         multiControler.PressUndoButton();
-
         // супер прикольная штука, но в этом случае, пока я не убавлю громкость до 0, то телевизор не выключить
         // но с помощью этого паттерна, можно сделать очень много всего, что должно иметь какое-либо строго пошаговое использование
+
+
 
         Console.Read();
     }
@@ -287,6 +290,6 @@ class MultiControler
         {
             ICommand undoCommand = commandsHistory.Pop();
             undoCommand.Undo();
-        }
+        } 
     }
 }
